@@ -8,7 +8,7 @@ color: purple;
   width:86vh;
   display: flex;
   text-align: center;
-  margin-left: 20%;
+  margin-left: 28%;
 `
 export default function Explnation({explanation}){
     return (<ExpStyle>
