@@ -33,7 +33,7 @@ export default function Media({ url, picurl }) {
     return (
       <ImgStyle>
         <img src={url} alt="Nasa Media of the day" />
-        <div><button class="glow-on-hover" type="button">My Github</button></div>
+        <div><a href="https://github.com/jessejohns-1?tab=repositories"><div><button class="glow-on-hover" type="button">My Github</button></div></a></div>
       </ImgStyle>
     );
   };
@@ -43,6 +43,6 @@ export default function Media({ url, picurl }) {
   ) : picurl === "video" ? (
     isVideo()
   ) : (
-    <h1>textt</h1>
+    <h1>Error loading page</h1>
   );
 }
