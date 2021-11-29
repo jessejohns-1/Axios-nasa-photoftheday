@@ -33,6 +33,7 @@ export default function Media({ url, picurl }) {
     return (
       <ImgStyle>
         <img src={url} alt="Nasa Media of the day" />
+        <div><button class="glow-on-hover" type="button">My Github</button></div>
       </ImgStyle>
     );
   };

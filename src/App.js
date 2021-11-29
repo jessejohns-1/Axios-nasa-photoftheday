@@ -27,7 +27,6 @@ function App() {
   return (
     <div className="App">
       
-    
      <Media url={data.url} picurl={data.media_type}/>
      
       <Title title={data.title} />
@@ -35,6 +34,7 @@ function App() {
     
       
       <Explnation explanation={data.explanation}/>
+   
       
     </div>
   );
