@@ -13,27 +13,24 @@ function App() {
   const [data, setData] = useState ([])
   
   useEffect(() => {
-      axios.get(`${BASE_URL}${API_KEY}`)
-      .then(result => {
-        console.log(result)
-        setData(result.data)
-        console.log(result.data)
-        
-      })
-      .catch (err =>{
-        console.log(err)
-      })
-    
+    axios.get(`${BASE_URL}${API_KEY}`)
+    .then(result => {
+      setData(result.data)
+    })
+    .catch (err =>{
+      console.log(err)
+    })
+  
 
-  }, [])
+}, [])
 
   return (
     <div className="App">
       
-      <Title title={data.title} />
     
      <Media url={data.url} picurl={data.media_type}/>
      
+      <Title title={data.title} />
       <Date date={data.date}/>
     
       

@@ -1,18 +1,26 @@
-import React from "react"
-import styled from 'styled-components'
+import React from "react";
+
+import styled from "styled-components";
 const ExpStyle = styled.div`
-display: flex;
-  text-align: center;
-color: purple;
-  font-weight: bold;
-  width:86vh;
   display: flex;
-  text-align: center;
-  margin-left: 28%;
-`
-export default function Explnation({explanation}){
-    return (<ExpStyle>
-        <p>{explanation}</p>
-    </ExpStyle>)
-    
+  color: #e8eddf;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  justify-content: center;
+  display: inline-block;
+  width: 80%;
+`;
+const Exp = styled.div`
+ 
+`;
+export default function Explnation({ explanation }) {
+  return (
+    <ExpStyle>
+      <Exp>{explanation}</Exp>
+    </ExpStyle>
+  );
 }
+

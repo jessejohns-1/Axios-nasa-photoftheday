@@ -2,8 +2,14 @@ import React from "react";
 import styled from 'styled-components'
 
 const ImgStyle = styled.div`
- heigh
+img{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  border-radius: 8px;
+  width: 72vw;
+  height: 72vh;
+}
 `
+
 
 
 export default function Media({ url, picurl }) {
@@ -26,9 +32,7 @@ export default function Media({ url, picurl }) {
   const isImage = () => {
     return (
       <ImgStyle>
-      <div>
-        <img src={url} alt="stuff" />
-      </div>
+        <img src={url} alt="Nasa Media of the day" />
       </ImgStyle>
     );
   };

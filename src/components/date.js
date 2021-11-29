@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 const DateStyle = styled.div`
-
-color: green;
-font-size: 0.5rem;
+ display: flex;
+  color: #e8eddf;
+  font-size: 0.5rem;
+  font-weight: bold;
+  justify-content: center;
+  display: inline-block;
+  width: 20%;
 `
 
 
