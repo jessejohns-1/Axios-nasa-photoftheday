@@ -25,6 +25,7 @@ export default function Media({ url, picurl }) {
           allowFullScreen
           title="Embedded youtube"
         />
+         <div><a href="https://github.com/jessejohns-1?tab=repositories"><div><button class="glow-on-hover" type="button">My Github</button></div></a></div>
       </div>
     );
   };
